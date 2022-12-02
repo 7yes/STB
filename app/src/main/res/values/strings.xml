@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="username">Username</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="password">Password</string>
+    <string name="enable_dark_mode">ENABLE DARK MODE</string>
+    <string name="wifi_enabled">WIFI ENABLED</string>
+    <string name="bluetooth_enabled">BLUETOOTH ENABLED</string>
+    <string name="message_here">MESSAGE HERE</string>
+    <string name="send">SEND</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/SignInFragment">
+
+    <fragment
+        android:id="@+id/SignInFragment"
+        android:name="com.example.myapp.ui.SignInFragment"
+        android:label="Sign-In"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_SignInFragment_to_ChatsFragment"
+            app:destination="@id/ChatsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:name="com.example.myapp.ui.MainSettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_main_settings" />
+
+    <fragment
+        android:id="@+id/ChatsFragment"
+        android:name="com.example.myapp.ui.ChatsFragment"
+        android:label="Chats"
+        tools:layout="@layout/fragment_chats" >
+        <action
+            android:id="@+id/action_ChatsFragment_to_IndividualChatFragment"
+            app:destination="@id/IndividualChatFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/IndividualChatFragment"
+        android:name="com.example.myapp.ui.IndividualChatFragment"
+        android:label="Personal Chat"
+        tools:layout="@layout/fragment_individual_chat" />
+</navigation>

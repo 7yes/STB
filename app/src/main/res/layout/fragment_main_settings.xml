@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".ui.MainSettingsFragment">
+
+   <androidx.appcompat.widget.SwitchCompat
+       android:id="@+id/swt_dark_mode"
+       android:text="@string/enable_dark_mode"
+       android:layout_margin="8dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/wifi_enabled"
+        android:text="@string/wifi_enabled"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/bt_enabled"
+        android:text="@string/bluetooth_enabled"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sw_environment"
+        android:text="SWITCH TO TESTING ENVIRONMENT"
+        android:checked="false"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/debug_logs"
+        android:layout_margin="8dp"
+        android:text="ENABLE / DISABLE DEBUG LOGS"
+        android:checked="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
